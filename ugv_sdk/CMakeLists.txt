@@ -14,14 +14,10 @@ option(STATIC_CHECK OFF)
 # set(CMAKE_BUILD_TYPE Debug)
 
 ## Check if pkg is built with ROS catkin
-if(CATKIN_DEVEL_PREFIX)
-    message(STATUS "Build package with catkin")
-    set(BUILD_WITHOUT_ROS OFF)
-    find_package(catkin REQUIRED)
-else()
-    message(STATUS "Build package with cmake")
-    set(BUILD_WITHOUT_ROS ON)    
-endif()
+
+message(STATUS "Build package with catkin")
+set(BUILD_WITHOUT_ROS OFF)
+find_package(catkin REQUIRED)
 
 ## Generate symbols for IDE indexer
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
