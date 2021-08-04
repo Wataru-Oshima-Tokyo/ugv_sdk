@@ -99,7 +99,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 # BUILD_WITHOUT_ROS
 
 catkin_package(
-	#LIBRARIES ${PROJECT_NAME}
+	LIBRARIES ${PROJECT_NAME} wrp_io
 	INCLUDE_DIRS include 
 	CATKIN_DEPENDS wrp_io
 	#  DEPENDS system_lib
