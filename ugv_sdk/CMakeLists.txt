@@ -56,7 +56,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     "Debug" "Release" "MinSizeRel" "RelWithDebInfo")
 endif()
 
-find_package(catkin REQUIRED COMPONENTS asio)
+find_package(catkin REQUIRED COMPONENTS wrp_io)
     include_directories(
         include
         ${catkin_INCLUDE_DIRS}
@@ -101,7 +101,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 catkin_package(
 	LIBRARIES ${PROJECT_NAME}
 	INCLUDE_DIRS include 
-	CATKIN_DEPENDS asio
+	CATKIN_DEPENDS wrp_io
 	#  DEPENDS system_lib
 )
 
