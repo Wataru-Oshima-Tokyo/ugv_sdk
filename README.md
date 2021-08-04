@@ -1,3 +1,7 @@
+# Caution!!
+ If you want to use "catkin build", you need to make a temporary work space (catkin_ws_temp) and use catkin_make in order to .so files in catkin_ws_temp/devel/lib/ .
+ And then you have to copy them to the main work space (catkin_ws/devel/lib);otherwise ugv_sdk cannot find the so files."
+
 # UGV SDK
 
 ![GitHub Workflow Status](https://github.com/agilexrobotics/wrp_sdk/workflows/Cpp/badge.svg)
